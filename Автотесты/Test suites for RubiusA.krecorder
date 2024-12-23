@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<title>Test suites for RubiusA</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">Search by article</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://mobile-qa-automation.com/<datalist><option>https://mobile-qa-automation.com/</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@id='recorddiv389651062']/div[3]/div/div/div/div/div/div[2]/div/a/table/tbody/tr/td<datalist><option>xpath=//div[@id='recorddiv389651062']/div[3]/div/div/div/div/div/div[2]/div/a/table/tbody/tr/td</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='МЕБЕЛЬ, СВЕТ И АКСЕССУАРЫ'])[1]/following::td[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Зарегистрируйтесь'])[1]/preceding::td[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Чтобы получить доступ к каталогу мебели и аксессуаров'])[1]/preceding::td[1]</option><option>xpath=//*/text()[normalize-space(.)='Магазин']/parent::*</option><option>xpath=//td</option><option>css=td</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>name=query<datalist><option>name=query</option><option>xpath=//input[@name='query']</option><option>xpath=//div[@id='rec389658092']/div/div/div/div/div/div/input</option><option>xpath=//input</option><option>css=input[name="query"]</option></datalist></td><td></td></tr>
+<tr><td>type</td><td>name=query<datalist><option>name=query</option><option>xpath=//input[@name='query']</option><option>xpath=//div[@id='rec389658092']/div/div/div/div/div/div/input</option><option>xpath=//input</option><option>css=input[name="query"]</option></datalist></td><td>000014</td></tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Украшения и аксессуары для дома, которые приносят радость.'])[1]/following::*[name()='svg'][1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Украшения и аксессуары для дома, которые приносят радость.'])[1]/following::*[name()='svg'][1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Все'])[1]/preceding::*[name()='svg'][2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Аксессуары'])[1]/preceding::*[name()='svg'][2]</option><option>css=svg.t-store__search-icon.js-store-filter-search-btn</option></datalist></td><td></td></tr>
+<tr><td>waitForPageToLoad</td><td>10000<datalist><option>10</option><option>100</option><option>10000</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@id='rec389658092']/div/div/div/div[2]/div[3]/div/a/div/div<datalist><option>xpath=//div[@id='rec389658092']/div/div/div/div[2]/div[3]/div/a/div/div</option><option>xpath=//a/div/div</option><option>css=div.js-product-img.t-store__card__bgimg.t-bgimg.loaded</option></datalist></td><td></td></tr>
+<tr><td>assertText</td><td>xpath=//div[@id='rec389658092']/div/div/div[2]/div[3]/div/div/div/div/div[2]/div/div[3]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='из'])[1]/following::div[121]</option><option>class=js-store-prod-sku js-product-sku</option><option>xpath=//div[@id='rec389658092']/div/div/div[2]/div[3]/div/div/div/div/div[2]/div/div[3]</option></datalist></td><td>Артикул: 000014</td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">Filter by material</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://mobile-qa-automation.com/<datalist><option>https://mobile-qa-automation.com/</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@id='recorddiv389651062']/div[3]/div/div/div/div/div/div[2]/div/a/table/tbody/tr/td<datalist><option>xpath=//div[@id='recorddiv389651062']/div[3]/div/div/div/div/div/div[2]/div/a/table/tbody/tr/td</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='МЕБЕЛЬ, СВЕТ И АКСЕССУАРЫ'])[1]/following::td[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Зарегистрируйтесь'])[1]/preceding::td[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Чтобы получить доступ к каталогу мебели и аксессуаров'])[1]/preceding::td[1]</option><option>xpath=//*/text()[normalize-space(.)='Магазин']/parent::*</option><option>xpath=//td</option><option>css=td</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@id='rec389658092']/div/div/div/div[2]/div/div/div[2]/div/div[3]/div[4]/div[2]/div/div[4]<datalist><option>xpath=//div[@id='rec389658092']/div/div/div/div[2]/div/div/div[2]/div/div[3]/div[4]/div[2]/div/div[4]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Металл'])[1]/following::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Керамика'])[1]/following::div[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Стекло'])[1]/preceding::div[2]</option><option>xpath=//div[4]/div[2]/div/div[4]</option></datalist></td><td></td></tr>
+<tr><td>waitForPageToLoad</td><td>10000<datalist><option>10000</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=//div[@id='rec389658092']/div/div/div/div[2]/div[3]/div/a/div/div<datalist><option>xpath=//div[@id='rec389658092']/div/div/div/div[2]/div[3]/div/a/div/div</option><option>xpath=//a/div/div</option><option>css=div.js-product-img.t-store__card__bgimg.t-bgimg.loaded</option></datalist></td><td></td></tr>
+<tr><td>assertText</td><td>//div[@id='rec389658092']/div/div/div[2]/div[3]/div/div/div/div/div[2]/div[6]/div[2]/p[2]<datalist><option>class=t-typography__characteristics js-store-prod-charcs</option><option>//div[@id='rec389658092']/div/div/div[2]/div[3]/div/div/div/div/div[2]/div[6]/div[2]/p[2]</option></datalist></td><td>Материал: Пластик</td></tr>
+</tbody></table>
+</body>
+</html>

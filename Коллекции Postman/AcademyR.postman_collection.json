@@ -1,0 +1,204 @@
+{
+	"info": {
+		"_postman_id": "86ae6b8c-8584-4bae-a84f-6c9bf950953c",
+		"name": "AcademyR",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40143318"
+	},
+	"item": [
+		{
+			"name": "CreateUser",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"Email1\", _.random(1000) + \"@gmail.com\")\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"{{Email1}}\",\r\n    \"name\": \"{{$randomFullName}}\",\r\n    \"password\": \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}doregister",
+					"host": [
+						"{{url}}doregister"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateUser#2",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"Email2\", _.random(1000) + \"@gmail.com\")\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"{{Email2}}\",\r\n    \"name\": \"{{$randomFullName}}\",\r\n    \"password\": \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}doregister",
+					"host": [
+						"{{url}}doregister"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateUser#3",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"Email3\", _.random(1000) + \"@gmail.com\")\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"{{Email3}}\",\r\n    \"name\": \"{{$randomFullName}}\",\r\n    \"password\": \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}doregister",
+					"host": [
+						"{{url}}doregister"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateCompany",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"companyname\", pm.response.json().company.name);\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"company_name\": \"{{$randomCompanyName}}\",\r\n  \"company_type\": \"ООО\",\r\n  \"company_users\": [\"{{Email1}}\", \"{{Email2}}\"],\r\n  \"email_owner\": \"{{Email3}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}createcompany",
+					"host": [
+						"{{url}}createcompany"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MagicSearch",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Company is found\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([233,234,235])\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"query\":\"{{companyname}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}magicsearch",
+					"host": [
+						"{{url}}magicsearch"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
